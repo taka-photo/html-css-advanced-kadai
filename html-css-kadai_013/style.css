@@ -1,4 +1,4 @@
-/* PC縲√せ繝槭�蜈ｱ騾壹せ繧ｿ繧､繝ｫ */
+/* PC、スマホ共通スタイル */
 body {
   font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial,
     sans-serif;
@@ -13,31 +13,31 @@ p {
 }
 
 /*================
-PC逕ｨ縺ｮ繧ｹ繧ｿ繧､繝ｫ 
+PC用のスタイル 
 =================*/
 @media screen and (min-width: 768px) {
 
-  /* 讓ｪ蟷�ｨｭ螳� */
+  /* 横幅設定 */
   body {
     max-width: 1080px;
     min-width: 960px;
     margin: 0 auto 0 auto;
   }
 
-  /* 繝倥ャ繝繝ｼ */
+  /* ヘッダー */
   header {
     display: flex;
     justify-content: space-between;
   }
 
-  /* 繝翫ン繧ｲ繝ｼ繧ｷ繝ｧ繝ｳ縺ｮ繝ｬ繧､繧｢繧ｦ繝� */
+  /* ナビゲーションのレイアウト */
   #nav-pc {
     text-align: right;
     font-size: 14px;
     padding-top: 15px;
   }
 
-  /* 繝翫ン繧ｲ繝ｼ繧ｷ繝ｧ繝ｳ縺ｮ繝ｪ繝ｳ繧ｯ縺ｮ陬�｣ｾ險ｭ螳� */
+  /* ナビゲーションのリンクの装飾設定 */
   #nav-pc>a {
     text-decoration: none;
     margin-left: 20px;
@@ -72,7 +72,7 @@ PC逕ｨ縺ｮ繧ｹ繧ｿ繧､繝ｫ
 
 
 /*====================
-  繧ｹ繝槭�繝医ヵ繧ｩ繝ｳ逕ｨ縺ｮ繧ｹ繧ｿ繧､繝ｫ
+  スマートフォン用のスタイル
  =====================*/
 
 @media screen and (max-width: 767px) {
@@ -112,10 +112,6 @@ PC逕ｨ縺ｮ繧ｹ繧ｿ繧､繝ｫ
     list-style: none;
   }
 
-  #nav-sp a {
-    display: block;
-  }
-
   #close {
     position: absolute;
     top: 20px;
@@ -126,11 +122,15 @@ PC逕ｨ縺ｮ繧ｹ繧ｿ繧､繝ｫ
     margin: 80px 0 30px 20px;
   }
 
-  #logo-sp a:link {
+  #nav-sp a {
+    display: block;
+  }
+
+  #nav-sp a:link {
     color: #ffffff;
   }
 
-  #logo-sp a:visited {
+  #nav-sp a:visited {
     color: #ffffff;
   }
 
